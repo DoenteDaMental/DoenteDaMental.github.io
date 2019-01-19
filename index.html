@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Calculadora</title>
+		<meta charset="UTF-8">
+		<link rel="shortcut icon" type="image/x-png" href="logo.png">
+		<script type="text/javascript">
+
+		function op(x) {
+			if (x == "soma") {
+				n1 = "Primeira parcela:";
+				n2 = "Segunda parecela:";
+			}
+			if (x == "sub") {
+				n1 = "Minuendo:";
+				n2 = "Subtraendo:";
+			}
+			if (x == "mult") {
+				n1 = "Primeiro fator:";
+				n2 = "Segundo fator:";
+			}
+			if (x == "div") {
+				n1 = "Dividendo:";
+				n2 = "Divisor:";
+			}
+			document.getElementById("calc").innerHTML = "<input type='hidden' name='op' value='" + x + "'><br>" + n1 + " <input type='number' name='n1' class='dados' required=''><br><br>" + n2 + "<input type='number' name='n2' class='dados' required=''><br><br><br><input type='submit' value='Calcular resultado' class='enviavolt' class='envia'>&nbsp;&nbsp;&nbsp;<input type='button' value='Voltar' class='enviavolt' onclick='volta()'><br><br><br>";
+		}
+
+		function volta() {
+			location.reload();
+		}
+
+		</script>
+		<link rel="stylesheet" type="text/css" href="estilo.css">
+	</head>
+	<body>
+		<center>
+			<form action="calculadora.php" method="POST" name="formC">
+				<fieldset id="campo">
+					<legend>Calculadora</legend>
+					<div id="calc">
+						<h3 class="titulo">Qual é a operação que deseja realizar?</h3><br><br>
+						<button class="cont" onclick="op('soma')">Soma</button>&nbsp;&nbsp;&nbsp;<button href="#" class="cont" onclick="op('sub')">Subtração</button>&nbsp;&nbsp;&nbsp;<button href="#" class="cont" onclick="op('mult')">Multiplicação</button>&nbsp;&nbsp;&nbsp;<button href="#" class="cont" onclick="op('div')">Divisão</button><br><br><br><br>
+					</div>
+				</fieldset>
+			</form>
+		</center>
+	</body>
+</html>

@@ -1,0 +1,55 @@
+body {
+	background-color: #323131;
+}
+
+p {
+	font-size: 18px;
+}
+
+legend {
+	font-size: 30px;
+	border: 1px solid;
+	border-radius: 10px;
+	background-color: #FDAF71;
+}
+
+#campo {
+	margin-top: 10%;
+	margin-left: 35%;
+	margin-right: 35%;
+	border-radius: 10px;
+	border: 1px solid;
+	background-color: #4FEDA0;
+}
+
+.titulo {
+	text-align: center;
+	font-style: normal;
+}
+
+button.cont {
+	padding: 2%;
+	background-color: rgb(0,160,255);
+	text-decoration: none;
+	color: black;
+	border: 1px solid rgb(0,70,255);
+	border-radius: 6px;
+}
+
+input.enviavolt {
+	border: ridge #3D73EF;
+	background-color: rgb(0,160,255);
+}
+
+input.enviavolt:active {
+	background-color: #6590F6;
+}
+
+input.dados {
+	border: 2px outset gray;
+	background-color: #DDDDD8;
+}
+
+h2#resu {
+
+}
